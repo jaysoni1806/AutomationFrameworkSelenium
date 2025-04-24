@@ -20,7 +20,7 @@ public class ZipUtils {
     }
 
     /* Make Zip file of Extent Reports in Project Root folder */
-    public static void zipReportFolder() {
+    public static void     zipReportFolder() {
         if (FrameworkConstants.ZIP_FOLDER.toLowerCase().trim().equals(FrameworkConstants.YES)) {
             if ((FrameworkConstants.ZIP_FOLDER_PATH != null || !FrameworkConstants.ZIP_FOLDER_PATH.isEmpty()) && (FrameworkConstants.ZIP_FOLDER_NAME != null || !FrameworkConstants.ZIP_FOLDER_NAME.isEmpty())) {
                 ZipUtil.pack(new File(FrameworkConstants.ZIP_FOLDER_PATH), new File(FrameworkConstants.ZIP_FOLDER_NAME));

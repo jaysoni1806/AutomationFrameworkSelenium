@@ -46,6 +46,8 @@ public class AllureManager {
 
     }
 
+
+
     @Attachment(value = "Failed test Screenshot", type = "image/png")
     public static byte[] takeScreenshotToAttachOnAllureReport() {
         try {
